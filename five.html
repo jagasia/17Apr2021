@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn1()
+        {
+            document.getElementById("username").value="Rajesh Ranjan";
+            document.getElementById("rajesh").innerHTML="<p style='color:red'>The form is submitted successfully</p>";
+            document.getElementById('p1').innerHTML="<font color=blue>This is a para</font>";
+        }
+    </script>
+</head>
+<body>
+<form action="">
+    Text: <input type="text" name="" id="username" required="required"> <br>
+    Number: <input type="number" name="" id="" required> <br>
+    Date: <input type="date" name="" id=""> <br>
+    Email: <input type="email" name="" id="" required> <br>
+    Range: <input type="range" name="" id=""> <br>
+    Button: <input type="button" value="Click me" onclick="fn1()"> <br>
+    Submit: <input type="submit" value=""> <br>
+    Reset: <input type="reset" value=""> <br>
+    Radio: <input type="radio" name="" id="" checked> <br>
+    Checkbox: <input type="checkbox" name="" id="" checked> <br>
+    Color: <input type="color" name="" id=""> <br>
+    Time: <input type="time" name="" id=""> <br>
+</form>
+<p id="p1"></p>
+<div id="rajesh"></div>
+</body>
+</html>

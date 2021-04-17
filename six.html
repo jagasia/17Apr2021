@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fn1() 
+        {            
+            var x=parseInt(document.getElementById('no1').value);
+            var y=parseInt(document.getElementById('no2').value);
+            var op=document.getElementById('operation').value;
+            var result=0;
+            switch(op)
+            {
+                case 'Add':
+                    result=x+y;
+                    break;
+                case 'Subtract':
+                    result=x-y;
+                    break;
+                case 'Multiply':
+                    result=x*y;
+                    break;                
+            }
+            document.getElementById('output').innerHTML="The "+op+" of "+x+" and "+y+" is "+result;
+        }        
+    </script>
+    <style>
+        #div2 {
+            color:red;
+          background-color: lightgrey;          
+          width: 500px;
+          border: 15pt groove brown;
+          /* border-width: 15pt;
+          border-style: groove;
+          border-color: chartreuse; */
+          padding: 50px;
+          margin: 20px;
+        }
+        </style>
+        
+</head>
+
+<body>
+    Number 1: <input type="number" name="" id="no1"><br>
+    Number 2: <input type="number" name="" id="no2"><br>
+    <select name="" id="operation" onchange="fn1()">
+        <option>Choose</option>
+        <option>Add</option>
+        <option>Subtract</option>
+        <option>Multiply</option>
+    </select>
+    <div id="output"></div>
+    
+<div id="div2">This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+</body>
+
+</html>

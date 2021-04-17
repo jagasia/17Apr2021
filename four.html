@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        
+        function fn1()
+        {
+            //we can access any html element using DOM      Document Object Model
+            //if check box is checked? then type=text.          if not checked, then type=password
+            var chk=document.getElementById("chkShowPassword");
+            if(chk.checked)
+                document.getElementById("pwd").setAttribute("type","text"); 
+            else
+                document.getElementById("pwd").setAttribute("type","password");           
+        }
+    </script>
+</head>
+<body>
+    User Name:<input type="text" name="" id=""><br>
+    Password :<input type="password" name="" id="pwd"><br>
+    <input type="checkbox" name="" id="chkShowPassword" onChange="fn1()"> Show Password <br>
+    <input type="submit" value="Login">
+    <input type="reset" value="Reset">
+</body>
+</html>
